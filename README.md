@@ -1,6 +1,6 @@
 # Terraform Beginner Bootcamp 2023
 
-## Semantic Versioning :mage: :mage:
+## Semantic Versioning :cloud:
 
 This project is going to use Semantic Versioning for its tagging: 
 [semver.org](https://semver.org/)
