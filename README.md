@@ -213,7 +213,7 @@ Will generate out  a changeset, about the state of ou infrastructure and what wi
 
 We can output this changeset ie. plan to be passed to an apply, but often you can just ignore outputting.
 
-#### Terrafrm apply 
+##### Terrafrm apply 
 
 `terraform apply`
 
@@ -221,13 +221,21 @@ This will run a plan and pass the changset to be executed by Terraform. Apply sh
 
 If we want to automatically approve an apply we can provide the auto approve flag eg. `terraform apply --auto-approve`
 
-### Terraform Lock Files
+#### Terragorm Destroy
+
+`terraform destroy`
+
+This will destroy resources.
+
+You can also use the auto approve fla gto skip the approve prompt. eg. `terraform apply --auto-aprove`
+
+#### Terraform Lock Files
 
 `.terraform.lck.hcl` contains the locked versioning for the providers or modules that should be used for this project.
 
 The terraform lock file should be committed to your version control system (VCS) eg. Github
 
-### Terraform State Fikes
+#### Terraform State Fikes
 
 `.terraform.tfstate` contains information about the current state of your infrastructure.
 
@@ -239,6 +247,6 @@ If you lose this file, you lose the ability to know the state of your infrastruc
 
 `.terraform.tfstate.backup` is the previous state file state. 
 
-### Terraform Directory
+#### Terraform Directory
 
 `.terraform` directory contains binaries of terraform providers.
